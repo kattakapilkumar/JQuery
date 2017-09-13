@@ -19,12 +19,20 @@
 
   </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+//we can write "button" instead of 'input[type="button"]'
+$(document).ready(function(){
+  $('input[type="button"]').click(function(){
+     $("h1").hide();
+   });
+});
 
+</script>
 </head>
 <body>
 
 <h1 class="header1">This is a heading</h1>
-<h1 class"header2">This is a another heading</h1>
+<h1 class="header2">This is a another heading</h1>
 <p>This is a paragraph.</p>
 <p id="test">This is another paragraph. This will be used in many exercises.</p>
 
