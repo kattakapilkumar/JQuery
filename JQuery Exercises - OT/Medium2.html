@@ -19,21 +19,26 @@
 
   </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+<script>
+$(document).ready(function(){
+  $('input[type="button"]').click(function(){
+      $('ul#wemmodules li:eq(0)').css( "border-bottom", "5px solid green" );
+  });
+  $('ul#wemmodules li:eq(0)').hover(function(){
+    $('ul#wemmodules li:eq(0)').css( "color", "red" );
+  })
+});
+</script>
 </head>
 <body>
-
 <h1 class="header1">This is a heading</h1>
 <h1 class="header2">This is a another heading</h1>
 <p>This is a paragraph.</p>
 <p id="test">This is another paragraph. This will be used in many exercises.</p>
-
 <input type="button" value="Click here to see the result">
-
 <div id="slide"></div>
 <div id="slide"></div>
 <div id="slide"></div>
-
 <br>
 <br>
 <div class="hello">Hello</div>

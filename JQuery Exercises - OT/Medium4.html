@@ -16,10 +16,24 @@
     display: none;
     float: left;
   }
+  .togClass{
+    color:red;
+    font-size:24px;
+    border-bottom:3px solid green;
+  }
 
   </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('body').on('click',function(e){
+      $(e.target).toggleClass("togClass");
+      //$('p').on('click',function(e){    p == body
+          //$(this).toggleClass("togClass");
 
+  })
+});
+</script>
 </head>
 <body>
 
