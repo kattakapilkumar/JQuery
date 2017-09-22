@@ -24,8 +24,8 @@ $(document).ready(function()
 {
   $('input[type="button"]').click(function()
   {
-    var pos = $("#test").position();
-  alert("Left: "+pos.left+"\nTop: "+pos.top);
+    var ofset = $("p:eq(0)").offset();
+  alert("Left: "+ofset.left+"\nTop: "+ofset.top);
   });
 
 });
