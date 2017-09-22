@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$("p1").on("log", function() {
+		//console.log("hello");
+		alert("hello");
+	});
+	$(".gen_event").on("click", function() {
+		$("p1").trigger("log");
+	//alert("hello");
+	});
+});
+</script>
+</head>
+<body>
+<div class="p1">
+<div class="p2">
+<div class="c1"><button class="gen_event" >Generate custom log event</button></div>
+</div>
+</div>
+</body>
+</html>
