@@ -2,16 +2,14 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
-$(function() {
-	$("p1").on("log", function() {
-		//console.log("hello");
-		alert("hello");
+$('document').ready(function(){
+	$(".p1").on("log", function() {
+		console.log("hello");
 	});
 	$(".gen_event").on("click", function() {
-		$("p1").trigger("log");
-	//alert("hello");
+		$(".p1").trigger("log");
 	});
-});
+})
 </script>
 </head>
 <body>
